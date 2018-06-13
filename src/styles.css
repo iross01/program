@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+.content .cta {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: stretch;
+  background-color: pink;
+}
+.content .cta img {
+  height: 30%;
+}
+
+.header {
+  height: 50px;
+}
+.header h1 {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #EEE;
+}
+.header strong {
+  color: #04B600;
+}
+.header nav ul {
+  float: right;
+}
+.header nav ul li {
+  display: inline-block;
+  padding-right: 30px;
+  color: #CCC;
+  font-size: 1.3em;
+}
+
+* {
+  font-family: "Microsoft Yi Baiti", "Verdana";
+  margin: 0;
+}
+
+html {
+  background-color: #111;
+}
+
+/*# sourceMappingURL=src/styles.css.map */

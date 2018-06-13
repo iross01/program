@@ -1,0 +1,19 @@
+.content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
+
+	.cta{
+		order: 0;
+		flex: 0 1 auto;
+		align-self: stretch;
+		background-color: pink; 
+
+		img{
+			height: 30%;
+		}
+	}
+}
