@@ -5,17 +5,20 @@
 	h1{
 		float: left;
 		padding: 0px;
+		padding-top: 10px;
 		margin: 0px;
 		margin-left: 20px;
-		margin-top: 10px;
 		color: #EEE;
+		font-weight: normal;
 	}
 
 	strong{
 		color: #04B600;
+		font-weight: normal;
 	}
 
 	nav{
+		padding-top: 20px;
 
 		ul{
 			float: right;
@@ -23,7 +26,7 @@
 				display: inline-block;
 				padding-right: 30px;
 				color: #CCC;
-				font-size: 1.3em;
+				font-size: 1em;
 			}
 		}
 	}

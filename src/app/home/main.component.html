@@ -1,12 +1,27 @@
 <div class="content">
-	<div class="cta">
-		<img src="assets/deadlift-outline-silhouette.png" alt="">
+	<div [class.active]="breadcrumb==1" class="cta">
+		<div class="cta-image">				
+			<img src="assets/deadlift-outline-silhouette.png" alt="">
+		</div>
 		<div class="cta-text">
-			<h1>Find <i>your</i> perfect training program</h1>
+			<h1>Find <strong>your</strong> perfect training program</h1>
 			<p>ProgramPicker takes the hassle out of finding a new training program.</p>
+			<div (click)="nextStep(2)" class="cta-button">
+				<p>Get started now</p>
+			</div>
 		</div>
-		<div class="cta-button">
-			<p>Get started now</p>
-		</div>
+
+	</div>
+
+	<div [class.active]="breadcrumb==2" class="age-gender-form">
+		<p>ihS</p>
+	</div>
+
+	<div class="breadcrumb">
+		<div (click)="nextStep(1)" [class.active]="breadcrumb==1" class="circle-1"></div>
+		<div [class.active]="breadcrumb==2" class="circle-2"></div>
+		<div [class.active]="breadcrumb==3" class="circle-3"></div>
+		<div [class.active]="breadcrumb==4" class="circle-4"></div>
+		<div [class.active]="breadcrumb==5" class="circle-5"></div>
 	</div>
 </div>

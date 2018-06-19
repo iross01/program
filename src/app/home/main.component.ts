@@ -5,5 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './main.component.html'
 })
 export class MainComponent {
-  title = 'app';
+
+	breadcrumb:number=1;
+
+	nextStep(step:number) {
+		this.breadcrumb=step;
+	}
+
 }
